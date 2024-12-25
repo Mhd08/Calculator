@@ -1,0 +1,97 @@
+
+<html>
+<head>
+  <style>
+
+    body {
+      background-color: cyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background-color: white;
+      border-radius: 2vh;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      display: grid;
+      grid-template-rows: 80px 1fr;
+      gap: 15px;
+      width: 300px;
+    }
+
+    .display {
+      background-color: black;
+      color: white;
+      padding: 2vh;
+      text-align: right;
+      font-size: 2rem;
+      border-radius: .5vh .5vh 0 0;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .btn {
+      background-color: white;
+      color: black;
+      padding: 2vh;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 1vh;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .btn:hover {
+      background-color: #dcdcdc;
+    }
+
+    .btn:active {
+      transform: scale(0.95);
+    }
+
+    .btn.operator {
+      background-color: #f0f0f0;
+      color: black;
+    }
+
+    .btn.operator:hover {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">0</div>
+    <div class="buttons">
+      <button class="btn">AC</button>
+      <button class="btn">(</button>
+      <button class="btn">)</button>
+      <button class="btn">+</button>
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn">-</button>
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn">*</button>
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn">/</button>
+      <button class="btn">DEL</button>
+      <button class="btn">0</button>
+      <button class="btn">.</button>
+      <button class="btn">=</button>
+    </div>
+  </div>
+</body>
+</html>
